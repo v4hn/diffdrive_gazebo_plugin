@@ -23,6 +23,7 @@ catkin_package(
     INCLUDE_DIRS include
 )
 
-add_definitions(-fPIC)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+
 add_library(gazebo_ros_diffdrive_uos src/gazebo_ros_diffdrive_uos.cpp)
 
